@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!--Subir a reposirorio-->
+    <link rel="canonical" href="https://martinllauce.github.io/calculadora_propinas">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="calculadora">
+        <div class="primera-parte">
+          <label for="">Bill</label>
+          <input type="number" class="input bill-input" id="bill-input">
+          <label for="" class="salto">Select Tipo %</label>
+          <div class="propina">
+            <div class="propinas propina-5">5%</div>
+            <div class="propinas propina-10">10%</div>
+            <div class="propinas propina-15 active">15%</div>
+            <div class="propinas propina-25">25%</div>
+            <div class="propinas propina-50">50%</div>
+            <div id="tip-custom"><input type="number" name="" class="tip-custom" placeholder="CUSTOM"></div>
+          </div>
+          <div class="etiqueta">
+            <label for="">Number of People</label>
+            <label for="" class="error">Can't be zero</label>
+          </div>
+          <input type="number" class="people-input" name="" id="">
+        </div>  
+
+
+        <div class="resultado">
+          <div class="monto-propina">
+            <div class="text">
+              <P>Tip Amount</P>
+              <p class="person">/ Person</p>
+            </div>
+            <div class="amount" id="tip-amount">$4.27</div>
+          </div>
+          <div class="total">
+            <div class="text">
+              <P>Total</P>
+              <p class="person">/ Person</p>
+            </div>
+            <div class="amount" id="total-amount">$32.79</div>
+          </div>
+          <div class="cuenta-total">
+            <div class="text">
+              <P>Cuenta</P>
+              <p class="person">/ Total</p>
+            </div>
+            <div class="amount" id="total-pagar">$36.90</div>
+          </div>
+          <div class="reset">RESET</div>
+        </div>
+          
+         
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
